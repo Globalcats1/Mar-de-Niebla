@@ -1,0 +1,2267 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F4F6F4" />
+
+    <title>Cabañas en Pahuatlán | Cabañas Mar de Niebla</title>
+    <meta
+      name="description"
+      content="Cabañas rústicas de madera en el Mirador de Ahila, Pahuatlán, Puebla. Despierta sobre un mar de niebla real. Consulta disponibilidad por WhatsApp."
+    />
+    <meta name="robots" content="index,follow" />
+
+    <meta
+      property="og:title"
+      content="Cabañas Mar de Niebla · Pahuatlán, Puebla"
+    />
+    <meta
+      property="og:description"
+      content="Duermes en la cima. Despiertas sobre las nubes. Pregunta si hay lugar por WhatsApp."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300&family=Karla:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        /* Paleta exacta del brief */
+        --pino-hondo: #0a1c18;
+        --pino: #14312b;
+        --musgo: #6e8c74;
+        --amate: #b8874b;
+        --bruma: #e1e7e3;
+        --niebla: #f4f6f4;
+
+        --blanco: #ffffff;
+        --texto: #20352e;
+        --muted: #65736d;
+        --linea: #d4ddd8;
+        --whatsapp: #25d366;
+
+        --max: 1160px;
+        --radio: 22px;
+        --shadow: 0 12px 30px rgba(20, 49, 43, 0.07);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family: "Karla", system-ui, sans-serif;
+        color: var(--texto);
+        background: var(--niebla);
+        line-height: 1.55;
+      }
+
+      img,
+      video {
+        display: block;
+        max-width: 100%;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .wrap {
+        width: min(calc(100% - 32px), var(--max));
+        margin-inline: auto;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-family: "Fraunces", Georgia, serif;
+        font-weight: 400;
+        line-height: 1.04;
+        letter-spacing: -0.025em;
+      }
+      h1 {
+        font-size: clamp(3.1rem, 12vw, 6.7rem);
+      }
+      h2 {
+        font-size: clamp(2.25rem, 7vw, 4.15rem);
+      }
+      h3 {
+        font-size: clamp(1.38rem, 4vw, 1.9rem);
+      }
+      p {
+        margin: 0;
+      }
+
+      .section {
+        padding: 78px 0;
+      }
+      .section-head {
+        max-width: 760px;
+        margin-bottom: 30px;
+      }
+      .section-head p {
+        margin-top: 14px;
+        color: var(--muted);
+        font-size: 1.02rem;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--amate);
+        font-size: 0.74rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+      }
+      .eyebrow::before {
+        content: "";
+        width: 26px;
+        height: 1px;
+        background: currentColor;
+      }
+
+      .btn {
+        min-height: 52px;
+        padding: 14px 20px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        font-weight: 700;
+        transition: 0.2s ease;
+      }
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+      .btn-wa {
+        background: var(--whatsapp);
+        color: #07180f;
+      }
+      .btn-pino {
+        background: var(--pino);
+        color: #fff;
+      }
+      .btn-light {
+        background: #fff;
+        border: 1px solid var(--linea);
+        color: var(--pino);
+      }
+      .btn-ghost {
+        background: rgba(255, 255, 255, 0.18);
+        border: 1px solid rgba(255, 255, 255, 0.42);
+        color: #fff;
+        backdrop-filter: blur(7px);
+      }
+
+      /* NAV */
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 90;
+        padding: 17px 0;
+        color: #fff;
+        background: transparent;
+        border-bottom: 1px solid transparent;
+        transition:
+          background 0.25s ease,
+          border-color 0.25s ease,
+          padding 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .nav.scrolled {
+        padding: 11px 0;
+        background: rgba(244, 246, 244, 0.95);
+        color: var(--pino);
+        border-color: var(--linea);
+        box-shadow: 0 8px 24px rgba(20, 49, 43, 0.08);
+        backdrop-filter: blur(12px);
+      }
+
+      .nav.scrolled .brand-mark {
+        color: var(--pino);
+        border-color: rgba(20, 49, 43, 0.2);
+        background: rgba(225, 231, 227, 0.85);
+      }
+
+      .nav.scrolled .desktop-menu a {
+        color: var(--pino);
+      }
+
+      .nav.scrolled .desktop-menu a:hover {
+        color: var(--pino-hondo);
+      }
+
+      .nav.scrolled .burger {
+        background: rgba(225, 231, 227, 0.92);
+        border-color: rgba(20, 49, 43, 0.18);
+      }
+
+      .nav.scrolled .burger span {
+        background: var(--pino);
+      }
+
+      .nav.scrolled .nav-cta {
+        background: var(--pino);
+        color: #fff !important;
+      }
+
+      .nav-in {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        position: relative;
+        z-index: 95;
+      }
+
+      .brand-mark {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-family: "Fraunces", serif;
+        border: 1px solid rgba(255, 255, 255, 0.42);
+        background: rgba(10, 28, 24, 0.14);
+        backdrop-filter: blur(6px);
+      }
+
+      /* Navegación desktop */
+      .desktop-menu {
+        display: none;
+        align-items: center;
+        gap: 22px;
+      }
+
+      .desktop-menu a {
+        font-size: 0.92rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .desktop-menu a:hover {
+        color: #fff;
+      }
+
+      .nav-cta {
+        display: none;
+        padding: 10px 15px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.94);
+        color: var(--pino) !important;
+        font-weight: 700 !important;
+      }
+
+      /* Botón hamburguesa */
+      .burger {
+        width: 44px;
+        height: 44px;
+        border: 0;
+        border-radius: 50%;
+        background: rgba(10, 28, 24, 0.22);
+        border: 1px solid rgba(255, 255, 255, 0.34);
+        backdrop-filter: blur(7px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        cursor: pointer;
+        position: relative;
+        z-index: 95;
+        padding: 0;
+      }
+
+      .burger span {
+        width: 19px;
+        height: 2px;
+        background: #fff;
+        border-radius: 999px;
+        transition:
+          transform 0.22s ease,
+          opacity 0.22s ease;
+      }
+
+      .burger.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+
+      .burger.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .burger.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+
+      /* Menú móvil desplegable */
+      .mobile-menu {
+        position: fixed;
+        inset: 0;
+        background: rgba(10, 28, 24, 0.97);
+        color: #fff;
+        z-index: 92;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 94px 28px 34px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition:
+          opacity 0.22s ease,
+          visibility 0.22s ease,
+          transform 0.22s ease;
+      }
+
+      .mobile-menu.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .mobile-menu nav {
+        width: 100%;
+        display: grid;
+        gap: 0;
+      }
+
+      .mobile-menu nav a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 58px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        font-family: "Fraunces", serif;
+        font-size: 1.45rem;
+        font-weight: 400;
+      }
+
+      .mobile-menu nav a::after {
+        content: "→";
+        font-family: "Karla", sans-serif;
+        color: var(--amate);
+        font-size: 1rem;
+      }
+
+      .mobile-menu .mobile-wa {
+        width: 100%;
+        margin-top: 26px;
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+
+      /* 1. HERO: EL FENÓMENO PRIMERO */
+      .hero {
+        min-height: 100svh;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+        background: var(--pino);
+        color: #fff;
+      }
+      .hero-media,
+      .hero-media video,
+      .hero-media::after {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .hero-media video {
+        object-fit: cover;
+      }
+      .hero-media::after {
+        content: "";
+        background:
+          linear-gradient(
+            180deg,
+            rgba(10, 28, 24, 0.05) 0%,
+            rgba(10, 28, 24, 0.1) 35%,
+            rgba(10, 28, 24, 0.7) 100%
+          ),
+          linear-gradient(90deg, rgba(10, 28, 24, 0.33), transparent 74%);
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        padding: 125px 0 46px;
+        max-width: 930px;
+      }
+      .hero h1 {
+        margin-top: 14px;
+      }
+      .hero h1 em {
+        font-weight: 300;
+        color: var(--niebla);
+      }
+      .hero-copy {
+        max-width: 650px;
+        margin-top: 18px;
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.08rem;
+      }
+      .hero-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 27px;
+      }
+      .hero-note {
+        margin-top: 22px;
+        max-width: 710px;
+        padding-left: 14px;
+        border-left: 2px solid var(--amate);
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 0.95rem;
+      }
+
+      /* 2. DISPONIBILIDAD: INMEDIATAMENTE DESPUÉS DEL HERO */
+      .availability {
+        background: var(--bruma);
+      }
+      .availability-grid {
+        display: grid;
+        gap: 23px;
+      }
+      .availability-copy p {
+        margin-top: 14px;
+        color: var(--muted);
+        max-width: 620px;
+      }
+      .availability-highlights {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        border-top: 1px solid rgba(20, 49, 43, 0.14);
+      }
+      .availability-row {
+        display: grid;
+        grid-template-columns: 42px 1fr;
+        gap: 12px;
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(20, 49, 43, 0.14);
+      }
+      .availability-row .n {
+        font-family: "Fraunces", serif;
+        color: var(--amate);
+        font-size: 1.05rem;
+      }
+      .availability-row strong {
+        display: block;
+      }
+      .availability-row span {
+        display: block;
+        margin-top: 2px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      /* 3. CABANAS: MÁS FOTO, MENOS "TARJETA DIGITAL" */
+      .cabins {
+        background: #fff;
+      }
+      .cabins-list {
+        display: grid;
+        gap: 36px;
+      }
+      .cabin {
+        display: grid;
+        gap: 18px;
+        padding-bottom: 34px;
+        border-bottom: 1px solid var(--linea);
+      }
+      .cabin:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+      .cabin-media {
+        min-height: 280px;
+        border-radius: var(--radio);
+        overflow: hidden;
+        position: relative;
+        background: linear-gradient(135deg, var(--bruma), var(--musgo));
+      }
+      .cabin-media img {
+        width: 100%;
+        height: 100%;
+        min-height: 280px;
+        object-fit: cover;
+      }
+      .capacity {
+        position: absolute;
+        left: 14px;
+        top: 14px;
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: rgba(244, 246, 244, 0.94);
+        color: var(--pino);
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+      .cabin-copy {
+        padding: 2px 2px 0;
+      }
+      .cabin-type {
+        color: var(--amate);
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .cabin h3 {
+        margin-top: 6px;
+      }
+      .cabin-description {
+        margin-top: 9px;
+        color: var(--muted);
+        max-width: 590px;
+      }
+      .features {
+        list-style: none;
+        padding: 0;
+        margin: 17px 0 20px;
+        display: grid;
+        gap: 8px;
+        color: #495951;
+      }
+      .features li {
+        display: flex;
+        gap: 8px;
+      }
+      .features li::before {
+        content: "✓";
+        color: var(--musgo);
+        font-weight: 700;
+      }
+      .cabin .btn {
+        width: 100%;
+      }
+
+      /* 4. INTERLUDIO VISUAL DEL FENÓMENO */
+      .phenomenon {
+        min-height: 68svh;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+        background: var(--musgo);
+        color: #fff;
+      }
+      .phenomenon-media,
+      .phenomenon-media img,
+      .phenomenon-media::after {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .phenomenon-media img {
+        object-fit: cover;
+      }
+      .phenomenon-media::after {
+        content: "";
+        background: linear-gradient(
+          180deg,
+          rgba(20, 49, 43, 0.04),
+          rgba(20, 49, 43, 0.68)
+        );
+      }
+      .phenomenon-copy {
+        position: relative;
+        z-index: 2;
+        padding: 80px 0 42px;
+        max-width: 780px;
+      }
+      .phenomenon-copy h2 {
+        margin-top: 10px;
+      }
+      .phenomenon-copy p {
+        margin-top: 14px;
+        max-width: 630px;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 1.02rem;
+      }
+      .phenomenon-line {
+        margin-top: 20px;
+        font-family: "Fraunces", serif;
+        font-size: clamp(1.4rem, 4vw, 2rem);
+        color: #fff;
+      }
+
+      /* 5. TARIFA */
+      .tariff {
+        background: var(--niebla);
+      }
+      .tariff-box {
+        display: grid;
+        gap: 20px;
+        padding: 28px 0;
+        border-top: 1px solid var(--linea);
+        border-bottom: 1px solid var(--linea);
+
+        justify-items: center;
+        text-align: center;
+      }
+
+      .tariff-box p {
+        margin: 10px auto 0;
+        color: var(--muted);
+        max-width: 680px;
+      }
+
+      /* BENEFICIOS */
+      .benefits {
+        background: var(--bruma);
+      }
+      .benefit-grid {
+        display: grid;
+        gap: 0;
+        border-top: 1px solid rgba(20, 49, 43, 0.14);
+      }
+      .benefit {
+        display: grid;
+        grid-template-columns: 46px 1fr;
+        gap: 12px;
+        padding: 18px 0;
+        border-bottom: 1px solid rgba(20, 49, 43, 0.14);
+      }
+      .benefit-number {
+        font-family: "Fraunces", serif;
+        color: var(--amate);
+        font-size: 1.12rem;
+      }
+      .benefit p {
+        margin-top: 4px;
+        color: var(--muted);
+      }
+
+      /* 6. COMO LLEGAR - ANTES DE ATRACTIVOS */
+      .arrival {
+        background: #fff;
+      }
+      .arrival-grid {
+        display: grid;
+        gap: 24px;
+      }
+      .map {
+        min-height: 360px;
+        border-radius: var(--radio);
+        overflow: hidden;
+        border: 1px solid var(--linea);
+        background: var(--bruma);
+      }
+      .map iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 360px;
+        border: 0;
+      }
+      .distance {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--linea);
+      }
+      .distance span:last-child {
+        color: var(--muted);
+      }
+      .road-block {
+        margin-top: 18px;
+        padding: 0 0 0 16px;
+        border-left: 2px solid var(--amate);
+      }
+      .road-block .road-label {
+        color: var(--amate);
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        font-size: 0.72rem;
+      }
+      .road-block h3 {
+        margin-top: 7px;
+      }
+      .road-block p {
+        margin-top: 8px;
+        color: var(--muted);
+      }
+      .transfer-line {
+        margin-top: 18px;
+        padding-top: 16px;
+        border-top: 1px solid var(--linea);
+      }
+      .transfer-line strong {
+        display: block;
+      }
+      .transfer-line p {
+        margin-top: 4px;
+        color: var(--muted);
+      }
+
+      /* 7. CERCA - MÁS COMPACTO */
+      .nearby {
+        background: var(--niebla);
+      }
+      .nearby-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .near {
+        min-height: 160px;
+        padding: 17px;
+        border-radius: 18px;
+        display: flex;
+        align-items: flex-end;
+        color: #fff;
+        background:
+          linear-gradient(180deg, transparent, rgba(20, 49, 43, 0.58)),
+          linear-gradient(135deg, var(--bruma), var(--musgo));
+      }
+      .near h3 {
+        font-size: 1.32rem;
+      }
+      .near span {
+        display: block;
+        margin-top: 3px;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 0.83rem;
+      }
+      .nearby-note {
+        margin-top: 14px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      /* 8. EXPERIENCIA REAL: IMPORTANTE, PERO DESPUÉS DE GENERAR DESEO */
+      .truth {
+        background: var(--bruma);
+      }
+      .truth-layout {
+        display: grid;
+        gap: 25px;
+      }
+      .truth-intro p {
+        margin-top: 14px;
+        color: var(--muted);
+        max-width: 620px;
+      }
+      .truth-promise {
+        margin-top: 20px;
+        padding-left: 15px;
+        border-left: 2px solid var(--amate);
+        font-family: "Fraunces", serif;
+        font-size: 1.4rem;
+        color: var(--pino);
+      }
+      .truth-list {
+        display: grid;
+        gap: 0;
+        border-top: 1px solid rgba(20, 49, 43, 0.14);
+      }
+      .truth-item {
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(20, 49, 43, 0.14);
+      }
+      .truth-item strong {
+        display: block;
+      }
+      .truth-item span {
+        display: block;
+        margin-top: 3px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      /* 9. RESENAS */
+      .reviews {
+        background: #fff;
+      }
+      .rating {
+        display: flex;
+        align-items: end;
+        gap: 14px;
+        margin: 18px 0 24px;
+      }
+      .score {
+        font-family: "Fraunces", serif;
+        font-size: 4rem;
+        line-height: 0.88;
+        color: var(--pino);
+      }
+      .stars {
+        color: var(--amate);
+        letter-spacing: 0.16em;
+      }
+
+      .review-stars {
+        color: var(--amate);
+        font-size: 1.05rem;
+        letter-spacing: 0.12em;
+        margin-bottom: 12px;
+      }
+      .reviews-grid {
+        display: grid;
+        gap: 12px;
+      }
+      .review {
+        padding: 20px 0;
+        border-top: 1px solid var(--linea);
+      }
+      .review:last-child {
+        border-bottom: 1px solid var(--linea);
+      }
+      .review p {
+        color: var(--muted);
+        font-style: italic;
+      }
+      .review small {
+        display: block;
+        margin-top: 10px;
+        color: #89938f;
+      }
+
+      .review-user {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      .review-avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: #e6ebe7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .review-avatar svg {
+        width: 22px;
+        height: 22px;
+        fill: none;
+        stroke: var(--pino);
+        stroke-width: 1.7;
+      }
+
+      .review-user strong {
+        display: block;
+        font-size: 14px;
+      }
+
+      .review-user small {
+        display: block;
+        margin-top: 2px;
+        color: var(--muted);
+      }
+
+      /* 10. FAQ */
+      .faq {
+        background: var(--niebla);
+      }
+      .faq-list {
+        display: grid;
+        gap: 8px;
+        max-width: 900px;
+      }
+      details {
+        border-bottom: 1px solid var(--linea);
+      }
+      summary {
+        list-style: none;
+        cursor: pointer;
+        padding: 16px 0;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        align-items: center;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      summary::after {
+        content: "+";
+        color: var(--amate);
+        font-size: 1.3rem;
+      }
+      details[open] summary::after {
+        content: "−";
+      }
+      details p {
+        padding: 0 0 16px;
+        color: var(--muted);
+      }
+
+      /* CIERRE */
+      .closing {
+        background: var(--musgo);
+        color: #fff;
+        text-align: center;
+      }
+      .closing .wrap {
+        max-width: 820px;
+      }
+      .closing p {
+        margin: 15px auto 0;
+        max-width: 620px;
+        color: rgba(255, 255, 255, 0.9);
+      }
+      .closing .btn {
+        margin-top: 24px;
+        min-width: min(100%, 340px);
+      }
+      .contact {
+        margin-top: 15px;
+        color: rgba(255, 255, 255, 0.83);
+        font-size: 0.9rem;
+      }
+
+      /* FOOTER */
+      footer {
+        background: var(--pino-hondo);
+        color: rgba(255, 255, 255, 0.72);
+        padding: 56px 0 100px;
+        font-size: 0.9rem;
+      }
+
+      .footer-grid {
+        display: grid;
+        gap: 34px;
+      }
+
+      .footer-brand {
+        max-width: 380px;
+      }
+
+      .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        color: #fff;
+        font-weight: 700;
+      }
+
+      .footer-logo-mark {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-family: "Fraunces", Georgia, serif;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+      }
+
+      .footer-logo-name {
+        font-family: "Fraunces", Georgia, serif;
+        font-size: 1.35rem;
+        font-weight: 400;
+      }
+
+      .footer-tagline {
+        margin-top: 17px;
+        color: rgba(255, 255, 255, 0.9);
+        font-family: "Fraunces", Georgia, serif;
+        font-size: 1.25rem;
+        line-height: 1.3;
+      }
+
+      .footer-location {
+        margin-top: 12px;
+        color: rgba(255, 255, 255, 0.55);
+      }
+
+      .footer-title {
+        margin-bottom: 12px;
+        color: var(--amate);
+        font-size: 0.74rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+      }
+
+      .footer-phone {
+        display: inline-block;
+        color: #fff;
+        font-size: 1.05rem;
+        font-weight: 700;
+      }
+
+      .footer-phone:hover {
+        color: var(--bruma);
+      }
+
+      .footer-socials {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .footer-social {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        min-height: 42px;
+        padding: 9px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 999px;
+        color: rgba(255, 255, 255, 0.85);
+        transition: 0.2s ease;
+      }
+
+      .footer-social:hover {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(255, 255, 255, 0.3);
+        color: #fff;
+      }
+
+      .footer-social svg {
+        width: 17px;
+        height: 17px;
+        fill: currentColor;
+      }
+
+      .footer-bottom {
+        margin-top: 38px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: rgba(255, 255, 255, 0.48);
+        font-size: 0.82rem;
+      }
+
+      .footer-privacy {
+        color: rgba(255, 255, 255, 0.65);
+      }
+
+      @media (max-width: 719px) {
+        .review {
+          padding: 20px 0;
+        }
+
+        .review-stars {
+          font-size: 1rem;
+          letter-spacing: 0.1em;
+          margin-bottom: 10px;
+        }
+
+        .review-user {
+          gap: 10px;
+          margin-top: 16px;
+        }
+
+        .review-avatar {
+          width: 38px;
+          height: 38px;
+        }
+
+        .review-avatar svg {
+          width: 19px;
+          height: 19px;
+        }
+
+        .review-user strong {
+          font-size: 0.87rem;
+        }
+
+        .review-user small {
+          font-size: 0.78rem;
+        }
+      }
+
+      @media (min-width: 720px) {
+        footer {
+          padding: 64px 0 34px;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1.3fr 0.7fr 1fr;
+          gap: 50px;
+          align-items: start;
+        }
+
+        .footer-bottom {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+
+      /* CTA FIJO EN MÓVIL */
+      .mobile-cta {
+        position: fixed;
+        z-index: 70;
+        left: 12px;
+        right: 84px;
+        bottom: 14px;
+        min-height: 58px;
+        border-radius: 17px;
+        padding: 9px 14px;
+        background: rgba(244, 246, 244, 0.97);
+        border: 1px solid var(--linea);
+        box-shadow: 0 10px 24px rgba(20, 49, 43, 0.14);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 9px;
+        backdrop-filter: blur(8px);
+      }
+      .mobile-cta strong {
+        display: block;
+        font-size: 0.87rem;
+      }
+      .mobile-cta span {
+        display: block;
+        font-size: 0.76rem;
+        color: var(--muted);
+      }
+      .mobile-cta a {
+        background: var(--whatsapp);
+        color: #07180f;
+        padding: 8px 11px;
+        border-radius: 999px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .floating-wa {
+        position: fixed;
+        z-index: 80;
+        right: 14px;
+        bottom: 14px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: var(--whatsapp);
+        display: grid;
+        place-items: center;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+        color: #07180f;
+        font-weight: 800;
+        font-size: 0.78rem;
+      }
+
+      @media (min-width: 720px) {
+        .wrap {
+          width: min(calc(100% - 56px), var(--max));
+        }
+        .section {
+          padding: 102px 0;
+        }
+        .desktop-menu {
+          display: flex;
+        }
+        .nav-cta {
+          display: inline-flex;
+        }
+        .burger {
+          display: none;
+        }
+        .mobile-menu {
+          display: none;
+        }
+        .hero-actions {
+          flex-direction: row;
+        }
+        .availability-grid {
+          grid-template-columns: 0.95fr 1.05fr;
+          align-items: start;
+        }
+        .cabins-list {
+          gap: 44px;
+        }
+        .cabin {
+          grid-template-columns: 1.05fr 0.95fr;
+          align-items: center;
+          gap: 34px;
+        }
+        .cabin:nth-child(even) {
+          grid-template-columns: 0.95fr 1.05fr;
+        }
+        .cabin:nth-child(even) .cabin-media {
+          order: 2;
+        }
+        .cabin-media {
+          min-height: 380px;
+        }
+        .cabin-media img {
+          min-height: 380px;
+        }
+        .cabin .btn {
+          width: auto;
+        }
+        .tariff-box {
+          grid-template-columns: 1.45fr auto;
+          align-items: center;
+        }
+        .benefit-grid {
+          grid-template-columns: repeat(3, 1fr);
+          border-top: 1px solid rgba(20, 49, 43, 0.14);
+        }
+        .benefit {
+          grid-template-columns: 1fr;
+          padding: 22px 20px;
+          border-right: 1px solid rgba(20, 49, 43, 0.14);
+        }
+        .benefit:last-child {
+          border-right: 0;
+        }
+        .nearby-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        .reviews-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .review {
+          padding: 20px 22px 20px 0;
+          border-top: 1px solid var(--linea);
+          border-bottom: 1px solid var(--linea);
+        }
+        .mobile-cta {
+          display: none;
+        }
+      }
+
+      @media (min-width: 900px) {
+        .arrival-grid {
+          grid-template-columns: 1.05fr 0.95fr;
+        }
+        .truth-layout {
+          grid-template-columns: 0.9fr 1.1fr;
+          align-items: start;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        .hero video {
+          display: none;
+        }
+        * {
+          transition: none !important;
+        }
+      }
+    </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Cabañas Mar de Niebla",
+        "description": "Cabañas rústicas de madera en el Mirador de Ahila, Pahuatlán, Puebla.",
+        "telephone": "+52 770 202 8899",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pahuatlán",
+          "addressRegion": "Puebla",
+          "addressCountry": "MX"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--
+    ARCHIVOS A SUSTITUIR CON MATERIAL REAL:
+    assets/video/mar-de-niebla.mp4
+    assets/img/hero-poster.jpg
+    assets/img/mar-de-niebla-real.jpg
+    assets/img/cabana-dos.jpg
+    assets/img/cabana-familiar.jpg
+    assets/img/cabana-grande.jpg
+
+    Dirección fotográfica:
+    - niebla real
+    - amanecer / hora dorada
+    - madera e imperfecciones visibles
+    - nada de stock genérico
+    - nada que convierta el lugar visualmente en hotel de lujo
+  -->
+
+    <header class="nav" id="mainNav">
+      <div class="wrap nav-in">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark">MN</span>
+          <span>Mar de Niebla</span>
+        </a>
+
+        <nav class="desktop-menu" aria-label="Navegación principal">
+          <a href="#cabanas">Cabañas</a>
+          <a href="#fenomeno">Mar de niebla</a>
+          <a href="#como-llegar">Cómo llegar</a>
+          <a href="#experiencia">La experiencia</a>
+          <a href="#resenas">Reseñas</a>
+          <a href="#faq">FAQ</a>
+
+          <a
+            class="nav-cta"
+            href="https://wa.me/527702028899?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Caba%C3%B1as%20Mar%20de%20Niebla%20y%20quiero%20saber%20si%20hay%20lugar%20para%20mis%20fechas."
+            target="_blank"
+            rel="noopener"
+          >
+            WhatsApp
+          </a>
+        </nav>
+
+        <button
+          class="burger"
+          id="burger"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav aria-label="Navegación móvil">
+        <a href="#inicio">Inicio</a>
+        <a href="#disponibilidad">Disponibilidad</a>
+        <a href="#cabanas">Cabañas</a>
+        <a href="#fenomeno">Mar de niebla</a>
+        <a href="#tarifas">Tarifas</a>
+        <a href="#como-llegar">Cómo llegar</a>
+        <a href="#cerca">Qué hay cerca</a>
+        <a href="#experiencia">La experiencia</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#faq">Preguntas frecuentes</a>
+      </nav>
+
+      <a
+        class="btn btn-wa mobile-wa"
+        href="https://wa.me/527702028899?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Caba%C3%B1as%20Mar%20de%20Niebla%20y%20quiero%20saber%20si%20hay%20lugar%20para%20mis%20fechas."
+        target="_blank"
+        rel="noopener"
+      >
+        Quiero saber si hay lugar
+      </a>
+    </div>
+
+    <main>
+      <!-- 1. HERO -->
+      <section class="hero" id="inicio">
+        <div class="hero-media" aria-hidden="true">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="assets/img/hero-poster.jpg"
+          >
+            <source src="assets/video/mar-de-niebla.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="wrap hero-content">
+          <span class="eyebrow">Mirador de Ahila · Pahuatlán, Puebla</span>
+
+          <h1>
+            Duermes en la cima.<br />
+            <em>Despiertas sobre las nubes.</em>
+          </h1>
+
+          <div class="hero-note">
+            Cabañas rústicas de madera, rodeadas de naturaleza. Aquí el
+            protagonista es el paisaje.
+          </div>
+
+          <div class="hero-actions">
+            <a
+              class="btn btn-wa"
+              href="https://wa.me/527702028899?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Caba%C3%B1as%20Mar%20de%20Niebla%20y%20quiero%20saber%20si%20hay%20lugar%20para%20mis%20fechas."
+              target="_blank"
+              rel="noopener"
+            >
+              Quiero saber si hay lugar
+            </a>
+
+            <a class="btn btn-ghost" href="#cabanas"> Ver las cabañas </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. DISPONIBILIDAD -->
+      <section class="section availability" id="disponibilidad">
+        <div class="wrap availability-grid">
+          <div class="availability-copy">
+            <span class="eyebrow">Disponibilidad</span>
+            <h2>Sí tenemos lugar.</h2>
+
+            <p>
+              Aunque lo decidas de último momento, puedes preguntar. Te
+              confirmamos disponibilidad por WhatsApp.
+            </p>
+
+            <!--<a
+              class="btn btn-pino"
+              style="margin-top: 22px"
+              href="https://wa.me/527702028899?text=Hola%2C%20quiero%20saber%20si%20hay%20lugar%20en%20Caba%C3%B1as%20Mar%20de%20Niebla%20para%20mis%20fechas."
+              target="_blank"
+              rel="noopener"
+            >
+              Preguntar si hay lugar
+            </a>-->
+          </div>
+
+          <div class="availability-highlights">
+            <div class="availability-row">
+              <div class="n">01</div>
+              <div>
+                <strong>Sin mínimo de noches</strong>
+                <span>Puedes venir desde una sola noche.</span>
+              </div>
+            </div>
+
+            <div class="availability-row">
+              <div class="n">02</div>
+              <div>
+                <strong>Reserva hasta con un día de anticipación</strong>
+                <span>Ideal para una escapada de último momento.</span>
+              </div>
+            </div>
+
+            <div class="availability-row">
+              <div class="n">03</div>
+              <div>
+                <strong>24 horas completas</strong>
+                <span>Check-in y check-out de 12:00 PM a 12:00 PM.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. CABANAS -->
+      <section class="section cabins" id="cabanas">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Las cabañas</span>
+            <h2>Elige el espacio que necesitas.</h2>
+            <p>
+              Son cabañas rústicas de madera, con capacidades distintas. La
+              tarifa actual se consulta directamente por WhatsApp.
+            </p>
+          </div>
+
+          <div class="cabins-list">
+            <article class="cabin">
+              <div class="cabin-media">
+                <img
+                  src="assets/img/cabana-dos.jpg"
+                  alt="Cabaña para dos de Cabañas Mar de Niebla"
+                  loading="lazy"
+                  onerror="this.style.display = 'none'"
+                />
+                <span class="capacity">2 personas</span>
+              </div>
+
+              <div class="cabin-copy">
+                <div class="cabin-type">Para pareja</div>
+                <h3>La de dos</h3>
+                <p class="cabin-description">
+                  Una opción sencilla y privada para una escapada de dos.
+                </p>
+
+                <ul class="features">
+                  <li>Cama matrimonial</li>
+                  <li>Baño privado</li>
+                  <li>Café de olla y pan de la región por la tarde</li>
+                </ul>
+
+                <!--<a
+                  class="btn btn-pino"
+                  href="https://wa.me/527702028899?text=Hola%2C%20me%20interesa%20la%20caba%C3%B1a%20%E2%80%9CLa%20de%20dos%E2%80%9D.%20Quiero%20saber%20si%20hay%20lugar%20y%20conocer%20la%20tarifa."
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Consultar esta cabaña
+                </a>-->
+              </div>
+            </article>
+
+            <article class="cabin">
+              <div class="cabin-media">
+                <img
+                  src="assets/img/cabana-familiar.jpg"
+                  alt="Cabaña familiar de Cabañas Mar de Niebla"
+                  loading="lazy"
+                  onerror="this.style.display = 'none'"
+                />
+                <span class="capacity">3 a 4 personas</span>
+              </div>
+
+              <div class="cabin-copy">
+                <div class="cabin-type">Para familia</div>
+                <h3>La familiar</h3>
+                <p class="cabin-description">
+                  Para compartir el viaje en familia.
+                </p>
+
+                <ul class="features">
+                  <li>Cama matrimonial y litera</li>
+                  <li>Construidas por pares</li>
+                  <li>Cada par comparte baño</li>
+                  <li>Café de olla y pan de la región por la tarde</li>
+                </ul>
+
+                <!--<a
+                  class="btn btn-pino"
+                  href="https://wa.me/527702028899?text=Hola%2C%20me%20interesa%20la%20caba%C3%B1a%20familiar.%20Quiero%20saber%20si%20hay%20lugar%20y%20conocer%20la%20tarifa."
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Consultar esta cabaña
+                </a>-->
+              </div>
+            </article>
+
+            <article class="cabin">
+              <div class="cabin-media">
+                <img
+                  src="assets/img/cabana-grande.jpg"
+                  alt="Cabaña grande de Cabañas Mar de Niebla"
+                  loading="lazy"
+                  onerror="this.style.display = 'none'"
+                />
+                <span class="capacity">6 a 8 personas</span>
+              </div>
+
+              <div class="cabin-copy">
+                <div class="cabin-type">Para grupo</div>
+                <h3>La grande</h3>
+                <p class="cabin-description">
+                  Más espacio para venir juntos y quedarse frente al paisaje.
+                </p>
+
+                <ul class="features">
+                  <li>2 camas matrimoniales y 3 literas</li>
+                  <li>Sala de estar y chimenea interior</li>
+                  <li>Terraza y ventanal panorámico</li>
+                  <li>Un solo piso</li>
+                </ul>
+
+                <!--<a
+                  class="btn btn-pino"
+                  href="https://wa.me/527702028899?text=Hola%2C%20me%20interesa%20la%20caba%C3%B1a%20grande.%20Quiero%20saber%20si%20hay%20lugar%20y%20conocer%20la%20tarifa."
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Consultar esta cabaña
+                </a>-->
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. TARIFA POR CABAÑA: SIN PUBLICAR MONTOS -->
+      <section class="section tariff" id="tarifas">
+        <div class="wrap">
+          <div class="tariff-box">
+            <div>
+              <span class="eyebrow">Tarifa por cabaña</span>
+              <h2>Pagas por la cabaña, no por persona.</h2>
+              <p>
+                Elige la cabaña según el tamaño de tu grupo. La tarifa
+                corresponde al espacio completo dentro de su capacidad; el monto
+                actual se confirma por WhatsApp.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. FENOMENO: MENOS TEXTO, MÁS EVIDENCIA VISUAL -->
+      <section class="phenomenon" id="fenomeno">
+        <div class="phenomenon-media" aria-hidden="true">
+          <img
+            src="assets/img/mar-de-niebla-real.jpg"
+            alt=""
+            onerror="this.style.display = 'none'"
+          />
+        </div>
+
+        <div class="wrap phenomenon-copy">
+          <span class="eyebrow" style="color: #f4f6f4">El mar de niebla</span>
+          <h2>Hay mañanas en las que despiertas sobre las nubes.</h2>
+
+          <p>
+            Desde la cima, la niebla cubre el valle hasta convertirlo en un
+            verdadero mar de nubes.
+          </p>
+
+          <div class="phenomenon-line">
+            Las cabañas son el asiento de primera fila.
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. TARIFA -->
+      <section class="section tariff" id="tarifas">
+        <div class="wrap">
+          <div class="tariff-box">
+            <div>
+              <span class="eyebrow">Consulta de tarifa</span>
+              <h2>Dinos cuándo quieres venir.</h2>
+              <p>
+                Envíanos tus fechas, cuántas personas viajan y qué cabaña te
+                interesa. Te compartimos disponibilidad y tarifa actual por
+                WhatsApp.
+              </p>
+            </div>
+
+            <a
+              class="btn btn-wa"
+              href="https://wa.me/527702028899?text=Hola%2C%20quiero%20consultar%20disponibilidad%20y%20tarifa%20para%20mis%20fechas%20en%20Caba%C3%B1as%20Mar%20de%20Niebla."
+              target="_blank"
+              rel="noopener"
+            >
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFICIOS -->
+      <section class="section benefits">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Lo que sí hay</span>
+            <h2>Pequeñas cosas que forman parte de la estancia.</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <div class="benefit">
+              <div class="benefit-number">01</div>
+              <div>
+                <h3>Pet friendly</h3>
+                <p>
+                  Puedes venir con tu mascota. Consulta las reglas antes de
+                  reservar.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <div class="benefit-number">02</div>
+              <div>
+                <h3>Café de olla</h3>
+                <p>Por la tarde se incluye café de olla y pan de la región.</p>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <div class="benefit-number">03</div>
+              <div>
+                <h3>Grupos y eventos</h3>
+                <p>
+                  Las ocho cabañas pueden rentarse juntas. Consulta condiciones
+                  por WhatsApp.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. COMO LLEGAR -->
+      <section class="section arrival" id="como-llegar">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Cómo llegar</span>
+
+            <h2>Llegar a Mar de Niebla es más sencillo de lo que imaginas.</h2>
+
+            <p>
+              Estamos en el Mirador de Ahila, Pahuatlán, Puebla. La mayor parte
+              del trayecto es por carretera y solo el último tramo de subida es
+              terracería.
+            </p>
+          </div>
+
+          <div class="arrival-grid">
+            <!-- MAPA -->
+            <div class="map">
+              <iframe
+                title="Mapa Mirador de Ahila, Pahuatlán, Puebla"
+                loading="lazy"
+                src="https://www.google.com/maps?q=Mirador%20de%20Ahila%2C%20Pahuatlan%2C%20Puebla&output=embed"
+              >
+              </iframe>
+            </div>
+
+            <!-- INFORMACIÓN -->
+            <div>
+              <div class="distance">
+                <strong>Desde CDMX</strong>
+                <span>aprox. 3 horas</span>
+              </div>
+
+              <div class="distance">
+                <strong>Desde Pachuca</strong>
+                <span>aprox. 2 horas</span>
+              </div>
+
+              <div class="distance">
+                <strong>Desde Puebla</strong>
+                <span>aprox. 3 horas</span>
+              </div>
+
+              <div class="distance">
+                <strong>Desde el centro de Pahuatlán</strong>
+                <span>aprox. 30 min</span>
+              </div>
+
+              <div class="road-block">
+                <div class="road-label">Llegar en coche es posible</div>
+
+                <h3>¿Puede subir un coche normal?</h3>
+
+                <p>
+                  Sí. La mayor parte del trayecto es por carretera y solo el
+                  último tramo hacia el mirador es terracería. Los sedanes suben
+                  de forma habitual.
+                </p>
+              </div>
+
+              <div class="transfer-line">
+                <strong>¿Vienes sin coche?</strong>
+
+                <p>
+                  Hay servicio de traslado desde el centro de Pahuatlán.
+                  Consulta disponibilidad y condiciones por WhatsApp.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. QUE HAY CERCA -->
+      <section class="section nearby" id="cerca">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Alrededores</span>
+            <h2>Cerca de mar de niebla</h2>
+          </div>
+
+          <div class="nearby-grid">
+            <div class="near">
+              <div>
+                <h3>Puente colgante</h3>
+                <span>Mirador de Ahila</span>
+              </div>
+            </div>
+            <div class="near">
+              <div>
+                <h3>Cascadas</h3>
+                <span>Honey</span>
+              </div>
+            </div>
+            <div class="near">
+              <div>
+                <h3>Ruta del café</h3>
+                <span>Café de altura</span>
+              </div>
+            </div>
+            <div class="near">
+              <div>
+                <h3>Papel amate</h3>
+                <span>San Pablito</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="nearby-note">
+            Te compartimos estas opciones cercanas como recomendación. Su
+            operación es independiente a Cabañas Mar de Niebla.
+          </p>
+        </div>
+      </section>
+
+      <!-- 8. EXPERIENCIA REAL -->
+      <section class="section truth" id="experiencia">
+        <div class="wrap truth-layout">
+          <div class="truth-intro">
+            <span class="eyebrow">La experiencia real</span>
+            <h2>Una estancia sencilla, rodeada de naturaleza.</h2>
+
+            <p>
+              Cabañas rústicas de madera para desconectarte, descansar y
+              disfrutar el paisaje.
+            </p>
+
+            <div class="truth-promise">
+              Lo mejor te espera al amanecer: un valle cubierto de nubes.
+            </div>
+          </div>
+
+          <div class="truth-list">
+            <div class="truth-item">
+              <strong>Un lugar para desconectarte</strong>
+              <span
+                >La señal celular puede variar dependiendo del área y no hay
+                servicio de Wi-Fi.</span
+              >
+            </div>
+
+            <div class="truth-item">
+              <strong>Agua caliente con boiler de leña</strong>
+              <span
+                >El agua caliente se prepara con leña, por lo que requiere
+                tiempo para calentarse.</span
+              >
+            </div>
+
+            <div class="truth-item">
+              <strong>Noches de montaña</strong>
+              <span
+                >Al caer la noche baja la temperatura, mientras que dentro de
+                las cabañas el ambiente es más resguardado.</span
+              >
+            </div>
+
+            <div class="truth-item">
+              <strong>Opciones para comer cerca</strong>
+              <span
+                >No contamos con cocina ni restaurante propio, pero encontrarás
+                una cenaduría cercana.</span
+              >
+            </div>
+
+            <div class="truth-item">
+              <strong>Baño compartido en cabañas familiares</strong>
+              <span
+                >Las cabañas para 3 a 4 personas comparten baño por pares.</span
+              >
+            </div>
+
+            <div class="truth-item">
+              <strong>Energía eléctrica</strong>
+              <span
+                >Contamos con servicio de energía eléctrica estable en las
+                cabañas.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. RESENAS -->
+      <section class="section reviews" id="resenas">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Reseñas</span>
+            <h2>4.8 estrellas en Google.</h2>
+            <p>
+              La experiencia de quienes ya subieron al mirador también habla por
+              el lugar.
+            </p>
+          </div>
+
+          <div class="reviews-grid">
+            <article class="review">
+              <div class="review-stars" aria-label="5 de 5 estrellas">
+                ★★★★★
+              </div>
+
+              <p>Inserta aquí una reseña real del perfil de Google.</p>
+
+              <div class="review-user">
+                <div class="review-avatar">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <strong>Nombre de la persona</strong>
+                  <small>Reseña de Google</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="review">
+              <div class="review-stars" aria-label="5 de 5 estrellas">
+                ★★★★★
+              </div>
+
+              <p>Inserta aquí una reseña real del perfil de Google.</p>
+
+              <div class="review-user">
+                <div class="review-avatar">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <strong>Nombre de la persona</strong>
+                  <small>Reseña de Google</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="review">
+              <div class="review-stars" aria-label="5 de 5 estrellas">
+                ★★★★★
+              </div>
+
+              <p>Inserta aquí una reseña real del perfil de Google.</p>
+
+              <div class="review-user">
+                <div class="review-avatar">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <strong>Nombre de la persona</strong>
+                  <small>Reseña de Google</small>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <a
+            class="btn btn-pino"
+            style="margin-top: 18px"
+            href="https://www.google.com/maps/search/?api=1&query=Caba%C3%B1as+Mar+de+Niebla+Pahuatlan+Puebla"
+            target="_blank"
+            rel="noopener"
+          >
+            Ver más opiniones en Google
+          </a>
+        </div>
+      </section>
+
+      <!-- 10. FAQ -->
+      <section class="section faq" id="faq">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Preguntas frecuentes</span>
+            <h2>Antes de venir, esto te puede servir.</h2>
+          </div>
+
+          <div class="faq-list">
+            <details>
+              <summary>¿Tienen hospedaje para mañana?</summary>
+              <p>
+                Puede haber disponibilidad incluso con un día de anticipación.
+                Escríbenos por WhatsApp para confirmar.
+              </p>
+            </details>
+
+            <details>
+              <summary>¿Hay mínimo de noches?</summary>
+              <p>No. Puedes reservar desde una sola noche.</p>
+            </details>
+
+            <details>
+              <summary>¿A cuánto están del centro de Pahuatlán?</summary>
+              <p>Aproximadamente a 30 minutos.</p>
+            </details>
+
+            <details>
+              <summary>¿Puede subir un coche bajo?</summary>
+              <p>
+                Sí. Solo el último tramo es terracería y suben sedanes de forma
+                habitual.
+              </p>
+            </details>
+
+            <details>
+              <summary>¿Puedo llegar si no llevo coche?</summary>
+              <p>
+                Hay servicio de traslado desde el centro de Pahuatlán. Consulta
+                disponibilidad por WhatsApp.
+              </p>
+            </details>
+
+            <details>
+              <summary>¿Aceptan mascotas?</summary>
+              <p>
+                Sí, somos pet friendly. Las reglas específicas deben confirmarse
+                por WhatsApp.
+              </p>
+            </details>
+
+            <details>
+              <summary>¿Tienen Wi‑Fi?</summary>
+              <p>No. La señal celular también es limitada en algunas áreas.</p>
+            </details>
+
+            <details>
+              <summary>¿Cómo consulto la tarifa?</summary>
+              <p>
+                Envíanos tus fechas, número de personas y la cabaña que te
+                interesa por WhatsApp.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11. CIERRE -->
+      <section class="section closing" id="contacto">
+        <div class="wrap">
+          <span class="eyebrow" style="color: #f4f6f4"
+            >Cabañas Mar de Niebla</span
+          >
+          <h2>¿Quieres saber si hay lugar para tus fechas?</h2>
+
+          <p>
+            Dinos cuándo quieres llegar y cuántas personas vienen. Te
+            respondemos directamente por WhatsApp.
+          </p>
+
+          <a
+            class="btn btn-wa"
+            href="https://wa.me/527702028899?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Caba%C3%B1as%20Mar%20de%20Niebla%20y%20quiero%20saber%20si%20hay%20lugar%20para%20mis%20fechas."
+            target="_blank"
+            rel="noopener"
+          >
+            Quiero saber si hay lugar
+          </a>
+
+          <div class="contact">
+            770 202 8899 · Mirador de Ahila, Pahuatlán, Puebla
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <!-- MARCA -->
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="footer-logo-mark">MN</span>
+              <span class="footer-logo-name">Mar de Niebla</span>
+            </div>
+
+            <p class="footer-tagline">
+              Duermes en la cima.<br />
+              Despiertas sobre las nubes.
+            </p>
+
+            <p class="footer-location">
+              Cabañas rústicas en el Mirador de Ahila, Pahuatlán, Puebla.
+            </p>
+          </div>
+
+          <!-- CONTACTO -->
+          <div>
+            <div class="footer-title">Contacto</div>
+
+            <a
+              class="footer-phone"
+              href="https://wa.me/527702028899?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Caba%C3%B1as%20Mar%20de%20Niebla%20y%20quiero%20informaci%C3%B3n."
+              target="_blank"
+              rel="noopener"
+            >
+              770 202 8899
+            </a>
+          </div>
+
+          <!-- REDES SOCIALES -->
+          <div>
+            <div class="footer-title">Síguenos</div>
+
+            <div class="footer-socials">
+              <!-- INSTAGRAM -->
+              <a
+                class="footer-social"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram de Cabañas Mar de Niebla"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm10.25 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+                  />
+                </svg>
+
+                Instagram
+              </a>
+
+              <!-- FACEBOOK -->
+              <a
+                class="footer-social"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                aria-label="Facebook de Cabañas Mar de Niebla"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.7V4.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1V11H7.7v3h2.7v8h3.1Z"
+                  />
+                </svg>
+
+                Facebook
+              </a>
+
+              <!-- TIKTOK -->
+              <a
+                class="footer-social"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                aria-label="TikTok de Cabañas Mar de Niebla"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M15.6 3c.2 1.5 1.1 2.8 2.4 3.6.8.5 1.7.8 2.7.8v3.1a8.1 8.1 0 0 1-5.1-1.8v6.5a6.2 6.2 0 1 1-5.4-6.1v3.2a3.1 3.1 0 1 0 2.3 3V2h3.1v1Z"
+                  />
+                </svg>
+
+                TikTok
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PARTE INFERIOR -->
+        <div class="footer-bottom">
+          <span>
+            © <span id="year"></span> Cabañas Mar de Niebla · Pahuatlán, Puebla
+          </span>
+
+          <span class="footer-privacy"> Aviso de privacidad </span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile-cta">
+      <div>
+        <strong>¿Sí tienen lugar?</strong>
+        <span>Pregúntanos por WhatsApp</span>
+      </div>
+
+      <a
+        href="https://wa.me/527702028899?text=Hola%2C%20quiero%20saber%20si%20hay%20lugar%20para%20mis%20fechas."
+        target="_blank"
+        rel="noopener"
+      >
+        Preguntar
+      </a>
+    </div>
+
+    <a
+      class="floating-wa"
+      aria-label="Abrir WhatsApp"
+      href="https://wa.me/527702028899?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Caba%C3%B1as%20Mar%20de%20Niebla%20y%20quiero%20saber%20si%20hay%20lugar%20para%20mis%20fechas."
+      target="_blank"
+      rel="noopener"
+    >
+      WA
+    </a>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      /* NAVBAR FIJA QUE CAMBIA AL HACER SCROLL */
+      const mainNav = document.getElementById("mainNav");
+
+      function updateNavbar() {
+        mainNav.classList.toggle("scrolled", window.scrollY > 24);
+      }
+
+      updateNavbar();
+      window.addEventListener("scroll", updateNavbar, { passive: true });
+
+      /* MENÚ HAMBURGUESA MÓVIL */
+      const burger = document.getElementById("burger");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      function closeMobileMenu() {
+        burger.classList.remove("active");
+        mobileMenu.classList.remove("open");
+        document.body.classList.remove("menu-open");
+        burger.setAttribute("aria-expanded", "false");
+        burger.setAttribute("aria-label", "Abrir menú");
+        mobileMenu.setAttribute("aria-hidden", "true");
+      }
+
+      function openMobileMenu() {
+        burger.classList.add("active");
+        mobileMenu.classList.add("open");
+        document.body.classList.add("menu-open");
+        burger.setAttribute("aria-expanded", "true");
+        burger.setAttribute("aria-label", "Cerrar menú");
+        mobileMenu.setAttribute("aria-hidden", "false");
+      }
+
+      burger.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.contains("open");
+        isOpen ? closeMobileMenu() : openMobileMenu();
+      });
+
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closeMobileMenu);
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeMobileMenu();
+      });
+
+      /* FAQ */
+      const faqs = [...document.querySelectorAll("details")];
+      faqs.forEach((item) => {
+        item.addEventListener("toggle", () => {
+          if (!item.open) return;
+          faqs.forEach((other) => {
+            if (other !== item) other.open = false;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
