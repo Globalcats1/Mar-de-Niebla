@@ -735,14 +735,19 @@
       }
       .near {
         min-height: 160px;
-        padding: 17px;
+        padding: 16px;
         border-radius: 18px;
+
         display: flex;
         align-items: flex-end;
+
         color: #fff;
-        background:
-          linear-gradient(180deg, transparent, rgba(20, 49, 43, 0.58)),
-          linear-gradient(135deg, var(--bruma), var(--musgo));
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        overflow: hidden;
       }
       .near h3 {
         font-size: 1.32rem;
@@ -1394,7 +1399,7 @@
             preload="metadata"
             poster="assets/img/hero-poster.jpg"
           >
-            <source src="assets/video/mar-de-niebla.mp4" type="video/mp4" />
+            <source src="./images/propuesta3.mp4" type="video/mp4" />
           </video>
         </div>
 
@@ -1493,7 +1498,7 @@
             <article class="cabin">
               <div class="cabin-media">
                 <img
-                  src="assets/img/cabana-dos.jpg"
+                  src="./images/paisaje-mar-niebla.webp"
                   alt="Cabaña para dos de Cabañas Mar de Niebla"
                   loading="lazy"
                   onerror="this.style.display = 'none'"
@@ -1528,7 +1533,7 @@
             <article class="cabin">
               <div class="cabin-media">
                 <img
-                  src="assets/img/cabana-familiar.jpg"
+                  src="./images/porche.webp"
                   alt="Cabaña familiar de Cabañas Mar de Niebla"
                   loading="lazy"
                   onerror="this.style.display = 'none'"
@@ -1564,7 +1569,7 @@
             <article class="cabin">
               <div class="cabin-media">
                 <img
-                  src="assets/img/cabana-grande.jpg"
+                  src="./images/vista-panoramica.webp"
                   alt="Cabaña grande de Cabañas Mar de Niebla"
                   loading="lazy"
                   onerror="this.style.display = 'none'"
@@ -1788,25 +1793,56 @@
           </div>
 
           <div class="nearby-grid">
-            <div class="near">
+            <div
+              class="near"
+              style="
+                background-image:
+                  linear-gradient(180deg, transparent, rgba(20, 49, 43, 0.75)),
+                  url(&quot;./images/puente.webp&quot;);
+              "
+            >
               <div>
                 <h3>Puente colgante</h3>
                 <span>Mirador de Ahila</span>
               </div>
             </div>
-            <div class="near">
+
+            <div
+              class="near"
+              style="
+                background-image:
+                  linear-gradient(180deg, transparent, rgba(20, 49, 43, 0.75)),
+                  url(&quot;./images/cascadas-honey.webp&quot;);
+              "
+            >
               <div>
                 <h3>Cascadas</h3>
                 <span>Honey</span>
               </div>
             </div>
-            <div class="near">
+
+            <div
+              class="near"
+              style="
+                background-image:
+                  linear-gradient(180deg, transparent, rgba(20, 49, 43, 0.75)),
+                  url(&quot;./images/ruta-cafe.jpg&quot;);
+              "
+            >
               <div>
                 <h3>Ruta del café</h3>
                 <span>Café de altura</span>
               </div>
             </div>
-            <div class="near">
+
+            <div
+              class="near"
+              style="
+                background-image:
+                  linear-gradient(180deg, transparent, rgba(20, 49, 43, 0.75)),
+                  url(&quot;./images/papel-amate.webp&quot;);
+              "
+            >
               <div>
                 <h3>Papel amate</h3>
                 <span>San Pablito</span>
