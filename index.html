@@ -563,6 +563,25 @@
         width: 100%;
       }
 
+      .cabin-price {
+        display: flex;
+        align-items: baseline;
+        gap: 9px;
+        margin: 20px 0 18px;
+      }
+
+      .cabin-price strong {
+        font-family: "Fraunces", Georgia, serif;
+        font-size: 1.9rem;
+        font-weight: 500;
+        line-height: 1;
+        color: var(--pino-hondo);
+      }
+
+      .cabin-price span {
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
       /* 4. INTERLUDIO VISUAL DEL FENÓMENO */
       .phenomenon {
         min-height: 68svh;
@@ -1372,7 +1391,7 @@
         target="_blank"
         rel="noopener"
       >
-        Quiero saber si hay lugar
+        Consultar disponibilidad
       </a>
     </div>
 
@@ -1412,7 +1431,7 @@
               target="_blank"
               rel="noopener"
             >
-              Quiero saber si hay lugar
+              Consultar disponibilidad
             </a>
 
             <a class="btn btn-ghost" href="#cabanas"> Ver las cabañas </a>
@@ -1501,21 +1520,15 @@
                 <p class="cabin-description">
                   Una escapada para dos, entre calma y naturaleza.
                 </p>
-
                 <ul class="features">
                   <li>Cama matrimonial</li>
                   <li>Baño privado</li>
                   <li>Café de olla y pan de la región, al atardecer</li>
                 </ul>
-
-                <!--<a
-                  class="btn btn-pino"
-                  href="https://wa.me/527702028899?text=Hola%2C%20me%20interesa%20la%20caba%C3%B1a%20%E2%80%9CLa%20de%20dos%E2%80%9D.%20Quiero%20saber%20si%20hay%20lugar%20y%20conocer%20la%20tarifa."
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Consultar esta cabaña
-                </a>-->
+                <div class="cabin-price">
+                  <strong>$1,000</strong>
+                  <span>por noche</span>
+                </div>
               </div>
             </article>
 
@@ -1544,14 +1557,10 @@
                   <li>Café de olla y pan de la región por la tarde</li>
                 </ul>
 
-                <!--<a
-                  class="btn btn-pino"
-                  href="https://wa.me/527702028899?text=Hola%2C%20me%20interesa%20la%20caba%C3%B1a%20familiar.%20Quiero%20saber%20si%20hay%20lugar%20y%20conocer%20la%20tarifa."
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Consultar esta cabaña
-                </a>-->
+                <div class="cabin-price">
+                  <strong>$1,200</strong>
+                  <span>por noche</span>
+                </div>
               </div>
             </article>
 
@@ -1579,34 +1588,12 @@
                   <li>Todo en un solo piso</li>
                 </ul>
 
-                <!--<a
-                  class="btn btn-pino"
-                  href="https://wa.me/527702028899?text=Hola%2C%20me%20interesa%20la%20caba%C3%B1a%20grande.%20Quiero%20saber%20si%20hay%20lugar%20y%20conocer%20la%20tarifa."
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Consultar esta cabaña
-                </a>-->
+                <div class="cabin-price">
+                  <strong>$2,000</strong>
+                  <span>por noche</span>
+                </div>
               </div>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 4. TARIFA POR CABAÑA: SIN PUBLICAR MONTOS -->
-      <section class="section tariff" id="tarifas">
-        <div class="wrap">
-          <div class="tariff-box">
-            <div>
-              <span class="eyebrow">Tarifa por cabaña</span>
-              <h2>
-                Disfruta de tarifas exclusivas por el tipo de cabaña que elijas
-              </h2>
-              <p>
-                Elige según el tamaño de tu grupo, la tarifa cubre el espacio
-                completo
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -1908,7 +1895,7 @@
         <div class="wrap">
           <div class="section-head">
             <span class="eyebrow">Reseñas</span>
-            <h2>4.8 estrellas en Google.</h2>
+            <h2>Lo que dicen de nosotros</h2>
             <p>
               La experiencia de quienes ya subieron al mirador también habla por
               el lugar.
@@ -2029,34 +2016,35 @@
           <div class="faq-list">
             <details>
               <summary>¿Qué necesito para reservar una cabaña?</summary>
-              <p>....</p>
+              <p>
+                Enviarnos un WhatsApp para confirmar disponibilidad, hacer el
+                50% de apartado y listo
+              </p>
             </details>
 
             <details>
               <summary>¿Qué formas de pago aceptan?</summary>
-              <p>...</p>
+              <p>Transferencia y efectivo</p>
             </details>
 
             <details>
               <summary>¿Se requiere algún anticipo para reservar?</summary>
-              <p>...</p>
+              <p>
+                El 50% del total de tu reservación para apartar y el 50% al
+                llegar
+              </p>
             </details>
 
             <details>
               <summary>¿Cuál es el horario de entrada y salida?</summary>
-              <p>...</p>
-            </details>
-
-            <details>
-              <summary>¿Qué incluye mi estancia?</summary>
-              <p>...</p>
+              <p>Check In y Check Out 12:00PM</p>
             </details>
 
             <details>
               <summary>
                 ¿Qué pasa si necesito cancelar o cambiar mi reservación?
               </summary>
-              <p>....</p>
+              <p>Con gusto puedes hacerlo por medio de WhatsApp</p>
             </details>
           </div>
         </div>
@@ -2081,7 +2069,7 @@
             target="_blank"
             rel="noopener"
           >
-            Quiero saber si hay lugar
+            Consultar disponibilidad
           </a>
 
           <div class="contact">Mirador de Ahila, Pahuatlán, Puebla</div>
